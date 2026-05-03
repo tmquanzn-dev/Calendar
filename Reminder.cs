@@ -13,5 +13,6 @@ namespace Calendar
         public string Note { get; set; }
         public int AppointmentId { get; set; }
         public Appointment Appointment { get; set; }
+        public bool IsNotified { get; set; } = false;
     }
 }
