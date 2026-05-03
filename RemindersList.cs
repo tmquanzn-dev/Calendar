@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Calendar
+{
+    public partial class RemindersList : Form
+    {
+        public RemindersList()
+        {
+            InitializeComponent();
+            setGUI();
+        }
+        private void setGUI()
+        {
+            dgvReminders.DataSource = CSDL.Instance.Reminder_AppointmentList;
+        }
+    }
+}
